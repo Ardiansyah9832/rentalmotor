@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <form action="proses.php" method="POST">
+        <h1>Rental Motor</h1>
+        <div>
+            <label for="nama">Nama Pelanggan : </label>
+            <input type="text" class=".form-control-sm" name="nama" id="nama" placeholder="Masukkan Nama Anda" include>
+        </div>
+        <div>
+            <label for="lamarental">Lama waktu rental(per hari) : </label>
+            <input type="number" name="lamarental" id="lamarental" placeholder="Batas minimal 1 hari" include>
+        </div>
+        <div>
+            <label for="jenis">Jenis Motor : </label>
+            <select class="form-control" name="jenis" id="jenis">
+                <option value="Scooter">Scooter</option>
+                <option value="Sport">Sport</option>
+                <option value="SportTouring">SportTouring</option>
+                <option value="Cross">Cross</option>
+            </select>
+        </div>
+        <button type="submit" name="submit">Submit</button>    
+    </form>
+</body>
+</html>
